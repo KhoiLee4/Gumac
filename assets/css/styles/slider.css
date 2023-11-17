@@ -1,0 +1,51 @@
+/* Style container của slider */
+.o-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style track của slider */
+.slick-track {
+    display: flex;
+    transition: transform 0.5s ease; /* Thêm hiệu ứng chuyển động để chuyển đổi slide mượt mà */
+}
+/* Thêm hiệu ứng chuyển động cho slide */
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style cho từng slide */
+.slick-slide {
+    flex: 0 0 auto;
+    outline: none;
+    animation: fade 0.5s ease; /* Áp dụng hiệu ứng chuyển động */
+}
+
+
+/* Style container của các chấm chuyển đổi */
+.slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Style cho mỗi chấm chuyển đổi */
+.o-carousel_dot {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Style cho chấm chuyển đổi đang active */
+.slick-active .o-carousel_dot {
+    background-color: #555;
+}

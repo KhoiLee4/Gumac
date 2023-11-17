@@ -1,0 +1,115 @@
+.container.text-center{
+    background-color: #fcfdff; /* Màu nền */
+    color: #2c2a2a; /* Màu chữ */
+    padding: 20px; /* Khoảng cách nội dung từ viền */
+    border-radius: 10px; /* Độ bo góc */
+    font-size: 36px; /* Kích thước chữ */
+    font-weight: bold; /* Độ đậm chữ */
+}
+.card-img-top{
+    border-radius: 50px; 
+}
+.card {
+    border: 1px solid #ddd; /* Viền */
+    border-radius: 10px; /* Độ bo góc */
+    overflow: hidden; /* Ẩn nội dung vượt ra ngoài viền */
+    transition: box-shadow 0.3s; /* Hiệu ứng khi hover */
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng khi hover */
+  }
+
+  .card-img-top {
+    object-fit: cover; /* Hiển thị ảnh đầy đủ trong khung */
+    height: 200px; /* Chiều cao của ảnh */
+  }
+
+  .card-body {
+    padding: 20px; /* Khoảng cách nội dung từ viền */
+  }
+
+  .card-title {
+    font-size: 1.5rem; /* Kích thước chữ */
+    font-weight: bold; /* Độ đậm chữ */
+  }
+
+  .card-text {
+    font-size: 1rem; /* Kích thước chữ */
+  }
+
+  .btn-primary {
+    background-color: #007bff; /* Màu nền nút */
+    color: #fff; /* Màu chữ nút */
+  }
+  #tinTucCarousel {
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 400px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background: none;
+    border: none;
+    font-size: 2rem;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: #fff;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+/*  */
+.list-group-item {
+    border: none;
+}
+
+.img-thumbnail {
+    border: none;
+    max-width: 200px;
+    max-height: 180px;
+}
+
+.list-group-item .list-new {
+    text-decoration: none;
+    color: #333;
+    font-size: medium;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.list-group-item:hover a {
+    color: #61c3d4;
+}

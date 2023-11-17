@@ -1,0 +1,41 @@
+.category-container {
+    background-color: #f8f9fa;
+    border: 1px solid #babdc0;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.list-group-item {
+    border: none;
+    padding: 8px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.list-group-item .card-img-top:hover {
+    background-color: #e9ecef;
+}
+
+/* Kiểu CSS khi hover vào sản phẩm */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+.col-md-3 .list-group-item a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}

@@ -1,0 +1,112 @@
+/* Áp dụng kiểu cho container chính */
+
+.col-md-6 .mb-3{
+
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0; 
+      text-align: center; 
+      color: rgb(36, 37, 37); 
+      max-width: 300px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+
+  }
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.quantity-label {
+    margin-right: 10px;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.quantity-button {
+    cursor: pointer;
+    border-radius: 5px;
+}
+  /* Định dạng nút */
+  .addtocart {
+    margin-top: 10px;
+  }
+  .col-md-6 .size h3{
+    font-weight: 300;
+    font-size: 16px;
+  }
+  /* Định dạng danh sách kích thước */
+  .col-md-6 .size ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  /* Định dạng các mục trong danh sách kích thước */
+  .col-md-6 .size ul li {
+    margin-bottom: 5px;
+    margin: 10px;
+    text-transform:uppercase;
+  }
+
+ /* Shipping info container styling */
+.ship-container {
+  margin-top: 20px;
+}
+
+/* Shipping info title styling */
+.col-md-12 h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-transform:  uppercase;
+  color: #007bff;
+}
+.col-md-12 .all{
+  display: flex;
+
+}
+.col-md-12 .all .ship{
+  margin: 10px;
+  width: 400px;
+}
+/* Shipping info item styling */
+.col-md-12 .ship {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+.col-md-12 .ship :hover{
+
+  color: rgb(45, 192, 185);
+}
+
+.ship img {
+  margin-bottom: 10px;
+}
+
+/* Shipping info text styling */
+.ship p {
+  margin-bottom: 20px;
+  color: black;
+  font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
+ 
+}
+  /* Định dạng nút Thêm vào giỏ hàng và Mua Ngay */
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    
+  }
+  
+  /* Định dạng nút Mua Ngay */
+  .btn-primary:nth-of-type(2) {
+    margin-left: 10px;
+  }
+  

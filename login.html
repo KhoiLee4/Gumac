@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUMAC -Đăng nhập </title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/styles/slider.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+            height: 150vh;
+            background-image: url('assets/images/login/Capture.JPG');
+            background-size: cover;
+            background-position: center;
+            
+        }
+
+        .container-login {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            align-items: center;
+            margin: 50px;
+           
+        }
+
+        .container-login h2{
+            background-color: #fff;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            margin-bottom: 15px;
+        }
+
+        .form-check-label {
+            padding-left: 0;
+        }
+        .btn-primary {
+        background-color: #4facbd;
+        border-color: rgb(92, 199, 202);
+        }
+    
+        /* Hover và Focus effect */
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: #67c3d3;
+            border-color: rgb(126, 221, 224);
+        }
+    
+        /* Active effect */
+        .btn-primary:active {
+            background-color: #67cece;
+            border-color:rgb(92, 199, 202);
+        }
+    </style>
+</head>
+<body>
+    <header class="t-header" >
+        <div class="t-header_top t-header_topBackground" >
+            <div class="background-container">
+                <img src="assets/images/banner/header_bg_top.5b9bcd3bc49fa3f7bedf.jpg" alt="background" style="width: 100%; height: 50px; ">
+                <div class="overlay-content">
+                    <div class="container o-container o-container-header" style="padding-left: 0; padding-right: 0;">
+                        <div class="t-header_flexBetween t-header_contact"  >
+                            <a class="t-header_contactLeft" href="tel:18006013" rel="noreferrer">
+                                <img src="https://js0fpsb45jobj.vcdn.cloud/storage/upload/media/path-227.png" alt="Hotline đặt hàng 18006013" style="width: 10px; height: 10px; ">
+                                <span class="u-fs-16 u-fs-md-14 u-lh-19 u-lh-md-17 a-paragraph-text a-paragraph-text-white" style="color:white">Hotline đặt hàng 18006013</span>
+                            </a>
+                            <div class="t-header_contactRight">
+                                <div class="t-header_contactRight_element t-header_contactRight_element-desktop">
+                                    <button type="button" class="t-header_contactRight_btn">
+                                        <div class="a-icon" style="width: 20px; height: 20px; margin-right: 5px;">
+                                            <img width="20" height="20" src="https://gumac.vn/static/media/ic_location_search_white.26c201fcfc57e79b93ea.svg" alt="location_search_white" loading="lazy">
+                                        </div>
+                                        Tra cứu tình trạng đơn hàng
+                                    </button>
+                                </div>
+                                <div class="t-header_contactRight_element t-header_contactRight_element-desktop">
+                                    <button type="button" class="t-header_contactRight_btn" >
+                                        <div class="a-icon" style="width: 18px; height: 18px; margin-right: 5px;">
+                                            <img width="20" height="20" src="https://gumac.vn/static/media/ic_location_white.29ec3e75edb3492b1248.svg" alt="location_white" loading="lazy">
+                                        </div>
+                                        Hệ thống Showroom
+                                    </button>
+                                </div>
+                                <div class="t-header_contactRight_element t-header_contactRight_element-desktop t-header_contactRight_element-search">
+                                    <div class="t-headerSearch" style="margin: 5px;">
+                                        <form class="header-search-input" novalidate="" >
+                                            <input placeholder="Tìm kiếm sản phẩm" value="" style="margin-right: 40px;">
+                                            <button aria-label="Icon button" class="header-button-icon" type="button">
+                                                <div class="a-icon" style="width: 13px; height: 13px;">
+                                                    <img width="20" height="20" src="https://gumac.vn/static/media/ic_search_white.5880f5581bfb5ec0e5ad.svg" alt="search_white" loading="lazy">
+                                                </div>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="t-header_bottom">
+            <div class="container o-container", style="padding-left: 0; padding-right: 0;">
+                <div class="t-header_flexBetween t-header_navWrapper">
+                    <div class="t-header_logo">
+                        <a aria-label="label" aria-current="page" class="active" href="/">
+                            <div class="a-image a-image-184x28 a-image-cover">
+                                <img src="assets/images/logo/gumac.jpg" alt="logo" loading="lazy" >
+                            </div>
+                        </a>
+                    </div>
+                    <nav class="nav-top">
+                        <ul class="nav-top_list nav-top_list-desktop">
+                            <li class=" high-light-menu ">
+                                <a target="_self" href="https://gumac.vn/deal-soc" rel="noreferrer">
+                                    <span class="u-fs-15 u-lh-17 a-paragraph-text a-paragraph-text-uppercase">DEAL ĐỘC QUYỀN</span>
+                                </a>
+                            </li>
+                            <li class="null ">
+                                <a aria-label="label" class="" href="/product.html" target="_self">
+                                    <span class="u-fs-15 u-lh-17 a-paragraph-text a-paragraph-text-uppercase">HÀNG MỚI</span>
+                                </a>
+                            </li>
+                            <li class="null "><a aria-label="label" class="" href="/product.html" target="_self">
+                                <span class="u-fs-15 u-lh-17 a-paragraph-text a-paragraph-text-uppercase">THỜI TRANG</span>
+                            </a>
+                            <li class=" high-light-menu ">
+                                <a target="_self" href="https://gumac.vn/sale-off/sale-off" rel="noreferrer">
+                                    <span class="u-fs-15 u-lh-17 a-paragraph-text a-paragraph-text-uppercase">SALE OFF</span>
+                                </a>
+                            </li>
+                            </li>
+                            <li class="null ">
+                                <a aria-label="label" class="" href="#" target="_self">
+                                    <span class="u-fs-15 u-lh-17 a-paragraph-text a-paragraph-text-uppercase">BỘ SƯU TẬP</span>
+                                </a>
+                            </li>
+                            <li class="null ">
+                                <a aria-label="label" class="" href="/news.html" target="_self">
+                                    <span class="u-fs-15 u-lh-17 a-paragraph-text a-paragraph-text-uppercase">TIN TỨC</span>
+                                </a>
+                            </li>
+                            <li class="null ">
+                                <a aria-label="label" class="" href="https://gumac.vn/gioi-thieu" target="_self">
+                                    <span class="u-fs-15 u-lh-17 a-paragraph-text a-paragraph-text-uppercase">VỀ GUMAC</span>
+                                </a>
+                            </li>
+                        </ul>
+                    <menu class="nav-top_menu"></menu>
+                    </nav>
+                    <div class="t-header_actions">
+                        <div class="t-header_actions_element t-header_actions_element-desktop">
+                            <button aria-label="Icon button" class="header-button-icon" type="button">
+                                <div class="a-icon" style="width: 20px; height: 20px;">
+                                    <a href="login.html"><img width="20" height="20" src="https://gumac.vn/static/media/ic_user_black.248b81780a1aca220688.svg" alt="user_black" loading="lazy"></a>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="t-header_actions_element t-header_actions_element-desktop">
+                            <button aria-label="Icon button" class="header-button-icon" type="button">
+                                <div class="a-icon" style="width: 20px; height: 20px;">
+                                    <a href=""><img width="20" height="20" src="https://gumac.vn/static/media/ic_heart_black.c598357d1fc15bfdc8a6.svg" alt="heart_black" loading="lazy"></a>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="t-header_actions_element t-header_actions_element-desktop">
+                            <button aria-label="Icon button" class="header-button-icon" data-toggle="modal" data-target="#cartModal" type="button" >
+                                <div class="a-icon" style="width: 20px; height: 20px;">
+                                    <img width="20" height="20" src="https://gumac.vn/static/media/ic_cart_black.924e1a1ec0eaa8f5feab.svg" alt="cart_black" loading="lazy">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Giỏ Hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="assets/images/products/productall/1-BE-DD11014.png" class="img-fluid" alt="Product Image">
+                        </div>
+                        <div class="col-md-8">
+                            <h5>Đầm dáng A phối bèo</h5>
+                            <p>Giá: Giá: 495.000 đ</p>
+                            <p>Số lượng: 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary">Thanh Toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-login"  style="position: relative; top: 120px;">
+        <h2 class="text-center mb-4">Đăng Nhập</h2>
+        <form id="loginForm" action="/process-login" method="post">
+            <div class="mb-3">
+                <label for="username" class="form-label">Email/Số điện thoại</label>
+                <input type="text" class="form-control rounded-pill" id="username" placeholder="Nhập eamil or number">
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <div class="input-group">
+                    <input type="password" class="form-control rounded-pill" id="password" placeholder="nhập password">
+                    
+                </div>
+            </div>
+            
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input " id="rememberMe">
+                <label class="form-check-label " for="rememberMe">Nhớ mật khẩu</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+
+            <p class="mt-3 text-center">
+                Trở thành thành viên của Gumac <a href="register.html">Đăng ký ngay</a>
+            </p>
+        </form>
+    </div>
+    <footer class="text-center" style="position: relative; top: 155px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="col-12 col-md-6 col-xl-12">
+                        <div class="t-footer_logo">
+                            <a aria-label="label" aria-current="page" class="active" href="/">
+                                <img width="158" height="101" alt="gumac_logo" src="https://js0fpsb45jobj.vcdn.cloud/storage/upload/media/icon/download.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-12">
+                        <div class="t-footer_description">
+                            <div class="u-fs-16 u-lh-21 a-paragraph-text a-paragraph-text-raisinBlack075">
+                                Tự hào là thương hiệu Việt, không chỉ mang đến những sản phẩm đẹp mà còn trao gửi những Giá trị thật - Hạnh phúc đích thực đến tận tay khách hàng.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-12">
+                        <div class="desktop mobile">
+                            <div class="t-footer_social">
+                                <a target="_self" class="t-footer_socialLink" href="#" rel="noreferrer">
+                                    <div class="a-image a-image-1x1 a-image-cover">
+                                        <img src="https://js0fpsb45jobj.vcdn.cloud/storage/upload/media/icon/facebook.svg" alt="social" loading="lazy" width="36" height="36">
+                                    </div>
+                                </a>
+                                <a target="_self" class="t-footer_socialLink" href="#" rel="noreferrer">
+                                    <div class="a-image a-image-1x1 a-image-cover">
+                                        <img src="https://js0fpsb45jobj.vcdn.cloud/storage/upload/media/icon/zalo.svg" alt="social" loading="lazy" width="36" height="36">
+                                    </div>
+                                </a>
+                                <a target="_self" class="t-footer_socialLink" href="#" rel="noreferrer">
+                                    <div class="a-image a-image-1x1 a-image-cover">
+                                        <img src="https://js0fpsb45jobj.vcdn.cloud/storage/upload/media/icon/youtube.svg" alt="social" loading="lazy" width="36" height="36">
+                                    </div>
+                                </a>
+                                <a target="_self" class="t-footer_socialLink" href="#" rel="noreferrer">
+                                    <div class="a-image a-image-1x1 a-image-cover">
+                                        <img src="https://js0fpsb45jobj.vcdn.cloud/storage/upload/media/icon-mxh-tt.png" alt="social" loading="lazy" width="36" height="36">
+                                    </div>
+                                </a>
+                                <a target="_self" class="t-footer_socialLink" href="#" rel="noreferrer">
+                                    <div class="a-image a-image-1x1 a-image-cover">
+                                        <img src="https://js0fpsb45jobj.vcdn.cloud/storage/upload/media/icon-mxh-ins.png" alt="social" loading="lazy" width="36" height="36">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="u-mt-xl-0 u-mt-md-60 u-mt-36">
+                            <span target="_self">
+                                <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-uppercase a-paragraph-text-600 a-paragraph-text-raisinBlack075">TRUY CẬP NHANH</p>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="t-footer_partList_left u-mt-16 u-mt-md-28">
+                                    <li class="u-mt-md-16 u-mt-12">
+                                        <a aria-label="label" aria-current="page" class="t-footer_link active" href="/">
+                                            <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Trang Chủ</p>
+                                        </a>
+                                    </li>
+                                    <li class="u-mt-md-16 u-mt-12">
+                                        <a class="t-footer_link" href="https://gumac.vn/bo-suu-tap/bst-bigsize" rel="noreferrer">
+                                            <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Bộ sưu tập</p>
+                                        </a>
+                                    </li>
+                                    <li class="u-mt-md-16 u-mt-12">
+                                        <a aria-label="label" class="t-footer_link" href="/tuyen-dung">
+                                            <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Tuyển dụng</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="t-footer_partList_right u-mt-16 u-mt-md-28">
+                                    <li class="u-mt-md-16 u-mt-12">
+                                        <a aria-label="label" class="t-footer_link" href="/vay-dam">
+                                            <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Đầm</p>
+                                        </a>
+                                    </li>
+                                    <li class="u-mt-md-16 u-mt-12">
+                                        <a aria-label="label" class="t-footer_link" href="/ao-so-mi">
+                                            <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Áo sơ mi</p>
+                                        </a>
+                                    </li>
+                                    <li class="u-mt-md-16 u-mt-12">
+                                        <a class="t-footer_link" href="https://gumac.vn/quan-dai" rel="noreferrer">
+                                            <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Quần</p>
+                                        </a>
+                                    </li>
+                                    <li class="u-mt-md-16 u-mt-12">
+                                        <a class="t-footer_link" href="https://gumac.vn/ao-thun" rel="noreferrer">
+                                            <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Áo thun</p>
+                                        </a>
+                                    </li>
+                                    <li class="u-mt-md-16 u-mt-12">
+                                        <a aria-label="label" class="t-footer_link" href="/chan-vay">
+                                            <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Chân váy</p>
+                                        </a>
+                                    </li>
+                                    <li class="u-mt-md-16 u-mt-12">
+                                        <a aria-label="label" class="t-footer_link" href="/quan-short">
+                                            <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Quần short</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="u-mt-xl-0 u-mt-md-60 u-mt-36">
+                            <span aria-label="label" class="" href="#" target="_self">
+                              <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-uppercase a-paragraph-text-600 a-paragraph-text-raisinBlack075">NÀNG HỎI - GU ĐÁP</p>
+                            </span>
+                        </div>
+                        <ul class="t-footer_partList u-mt-16 u-mt-md-28">
+                            <li class="u-mt-md-16 u-mt-12">
+                                <a aria-label="label" class="t-footer_link" href="/huong-dan-mua-hang" target="_self">
+                                    <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Hướng dẫn đặt hàng tại Gumac.vn</p>
+                                </a>
+                            </li>
+                            <li class="u-mt-md-16 u-mt-12">
+                                <a aria-label="label" class="t-footer_link" href="/huong-dan-chon-size" target="_self">
+                                    <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Hướng dẫn chọn size váy - đầm cùng Gumac.vn</p>
+                                </a>
+                            </li>
+                            <li class="u-mt-md-16 u-mt-12">
+                                <a aria-label="label" class="t-footer_link" href="/chinh-sach-khach-hang-than-thiet" target="_self">
+                                    <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Chính sách khách hàng thân thiết</p>
+                                </a>
+                            </li>
+                            <li class="u-mt-md-16 u-mt-12">
+                                <a aria-label="label" class="t-footer_link" href="/chinh-sach-bao-mat" target="_self">
+                                    <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Chính sách bảo mật thông tin khách hàng</p>
+                                </a>
+                            </li>
+                            <li class="u-mt-md-16 u-mt-12">
+                                <a aria-label="label" class="t-footer_link" href="/chinh-sach-doi-tra" target="_self">
+                                    <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Chính sách bảo hành và đổi sản phẩm</p>
+                                </a>
+                            </li>
+                            <li class="u-mt-md-16 u-mt-12">
+                                <a aria-label="label" class="t-footer_link" href="/chinh-sach-thanh-toan" target="_self">
+                                    <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Quy định về thanh toán và vận chuyển</p>
+                                </a>
+                            </li>
+                            <li class="u-mt-md-16 u-mt-12">
+                                <a aria-label="label" class="t-footer_link" href="/lien-he" target="_self">
+                                    <p class="u-fs-16 u-lh-19 a-paragraph-text a-paragraph-text-raisinBlack075">Liên hệ</p>
+                                </a>
+                            </li>
+                        </ul>
+                    <div>
+                </div> 
+            </div>
+                
+            </div>  
+              
+        </div>
+        <div class="row t-footer_bottomInfo">
+            <div class="col-12 col-md-auto t-footer_copyright t-footer_text">
+                <p class="u-fs-16 u-lh-21 a-paragraph-text">©2021. Công ty cổ phần GUMAC. All RIGHTS RESERVED</p>
+            </div>
+            <div class="col-12 col-md-auto">
+                <div class="t-footer_boCongThuong">
+                    <a href="http://online.gov.vn/Home/WebDetails/20649" rel="noreferrer">
+                        <div class="a-image a-image-116x44 a-image-contain">
+                            <img src="https://js0fpsb45jobj.vcdn.cloud/storage/upload/media/gov.svg" alt="Bo cong thuong" loading="lazy">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+      <!-- Optional: jQuery, Popper.js, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $("#loginForm").submit(function(event) {
+            event.preventDefault();
+
+            var reg_username = localStorage.getItem('reg_email');
+            var reg_password = localStorage.getItem('reg_password');
+            var login_username = $("#username").val();
+            var login_password = $("#password").val();
+
+            // Kiểm tra xem các ô nhập liệu có rỗng không
+            if (login_username === "") {
+                alert("Vui lòng điền email hoặc số điện thoại.");
+                return;
+            }
+            if (login_password === "") {
+                alert("Vui lòng điền mật khẩu.");
+                return;
+            }
+
+            // Kiểm tra thông tin đăng nhập
+            if (login_username === reg_username && login_password === reg_password) {
+                alert("Đăng nhập thành công!");
+
+                localStorage.removeItem('reg_username');
+                localStorage.removeItem('reg_email');
+                localStorage.removeItem('reg_phone');
+
+                window.location.href = "index.html";
+                
+            } else {
+                alert("Thông tin sai vui lòng kiểm tra lại.");
+            }
+
+        });
+        </script>
+</body>
+</html>
