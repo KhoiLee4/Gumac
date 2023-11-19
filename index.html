@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GUMAC - Home</title>
+    <link rel="icon" href="https://gumac.vn/favicon.ico">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/styles/slider.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -166,6 +167,9 @@
         </div>
     </div>
     <div class="p-home">
+        <!-- <div id="scrollToTopBtn" onclick="scrollToTop()">
+            <img src="assets/images/banner/top.png">
+        </div> -->
         <div class="t-homeBanner">
             <div class="o-carousel o-carousel-innerDots">
                 <div class="slick-slider" dir="ltr">
@@ -210,6 +214,33 @@
                                     </div>
                                 </div>
                             </div>
+                            <div data-index="0" class="slick-slide" tabindex="-1" aria-hidden="true">
+                                <div class="o-carousel_wrap">
+                                    <div class="o-carousel_item">
+                                        <div class="t-homeBanner_thumbnail">
+                                            <a href="#" target="_self" rel="noreferrer">
+                                                <div class="a-image a-image-1600x635 a-image-cover">
+                                                    <img src="assets/images/slider/1600x635-3.jpg" alt="HOMEPAGE 1" loading="eager">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="0" class="slick-slide" tabindex="-1" aria-hidden="true">
+                                <div class="o-carousel_wrap">
+                                    <div class="o-carousel_item">
+                                        <div class="t-homeBanner_thumbnail">
+                                            <a href="#" target="_self" rel="noreferrer">
+                                                <div class="a-image a-image-1600x635 a-image-cover">
+                                                    <img src="assets/images/slider/1600x635-4.jpg" alt="HOMEPAGE 2" loading="eager">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
                             
                         </div>
                     </div>
@@ -1185,7 +1216,7 @@
       var currentSlide = 0;
   
       // Thời gian giữa các lần chuyển slide (đơn vị: milliseconds)
-      var interval = 2500; // Ví dụ: chuyển động mỗi 3 giây
+      var interval = 1000; // Ví dụ: chuyển động mỗi 3 giây
   
       // Hàm tự động chuyển slide
       function autoSlide() {
@@ -1207,6 +1238,31 @@
         }
       );
     });
+
+    // window.onscroll = function() {
+    // scrollFunction();
+    // };
+
+    // function scrollFunction() {
+    //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //         document.getElementById("scrollToTopBtn").style.display = "block";
+    //     } else {
+    //         document.getElementById("scrollToTopBtn").style.display = "none";
+    //     }
+    // }
+
+    // function scrollToTop() {
+    //     const scrollDuration = 1000; // Thời gian để cuộn lên (1 giây)
+    //     const scrollStep = -window.scrollY / (scrollDuration / 15);
+
+    //     const scrollInterval = setInterval(function() {
+    //         if (window.scrollY != 0) {
+    //             window.scrollBy(0, scrollStep);
+    //         } else {
+    //             clearInterval(scrollInterval);
+    //         }
+    //     }, 15);
+    // }
   </script>
 </body>
 </html>

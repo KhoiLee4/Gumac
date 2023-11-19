@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GUMAC-Details</title>
+    <link rel="icon" href="https://gumac.vn/favicon.ico">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/details_product/details.css">
     <link rel="stylesheet" href="assets/css/styles/slider.css">
@@ -14,6 +15,10 @@
 
     <!-- Liên kết đến tệp CSS của bạn hoặc bao gồm các kiểu CSS của bạn ở đây -->
 
+      <!-- Optional: jQuery, Popper.js, Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header class="t-header" >
@@ -177,16 +182,17 @@
                 <h2 class="mb-3">Áo kiểu thắt nơ AD10025</h2>
                 <p><strong>Giá:</strong> $99.99</p>
                 <p><strong>Màu Sắc:</strong> 
-                    <input type="radio" id="color-black" name="color">
+                    <input type="radio" id="color-black" name="color" onclick="mau()">
                     <label for="color-black">Đen</label>
                     <input type="radio" id="color-red" name="color">
                     <label for="color-red">Đỏ</label>  
                 </p>
+                <div id="mau" style="height: 10px; width: 10px; border: 1px solid black;"></div>
                 <p><strong>Mô Tả:</strong> Mang phong cách thời thượng, nổi bật cho người mặc</p>
                 <div class="quantity-container">
                     <p class="quantity-label"><strong>Số lượng:</strong></p>
                     <button class="quantity-button" onclick="decreaseQuantity()">-</button>
-                    <input type="text" class="quantity-input" id="quantity" value="1">
+                    <input type="text" class="quantity-input" id="quantity">
                     <button class="quantity-button" onclick="increaseQuantity()">+</button>
                 </div>
                 <div class="size">
@@ -199,7 +205,7 @@
                         <li>XL</li>
                     </ul>
                 </div>
-                <button type="button" class="btn btn-primary mr-2">Thêm vào giỏ hàng</button>
+                <button type="submit" class="btn btn-primary mr-2">Thêm vào giỏ hàng</button>
                 <button type="button" class="btn btn-primary">Mua Ngay</button>
             </div>
         </div>
@@ -423,11 +429,21 @@
             </div>
         </div>
     </footer>
-      <!-- Optional: jQuery, Popper.js, Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-   
+    
+
+      <script>
+        function mau()
+        {
+
+        
+        
+        }
+
+      </script>
+
 
 </body>
+
+
+
 </html>
